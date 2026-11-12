@@ -48,8 +48,7 @@ CLIENT_URL=http://localhost:5173
 |---                          |                   ---|
 | `PORT`                      |              Port the API listens on. Keep 5000. |
 | `MONGO_URI`                 |              Database address. Use the line above for local MongoDB. Use `127.0.0.1`, not `localhost`. |
-| `JWT_SECRET`                |              Secret used to sign login tokens. Any long random text. To generate one, run: `node -e "console.
-                                             log(require('crypto').randomBytes(32).toString('hex'))"` and paste the output. |
+| `JWT_SECRET`                |              Secret used to sign login tokens. Any long random text. To generate one, run: `node -e "console. log(require('crypto').randomBytes(32).toString('hex'))"` and paste the output. |
 | `CLIENT_URL`                |              Address of the website. Keep it as is. |
 
 Then install and load the sample data:
