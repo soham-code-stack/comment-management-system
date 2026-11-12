@@ -1,0 +1,19 @@
+{
+  "users": [
+    { "name": "Admin Anika", "email": "admin@example.com", "password": "Admin@123", "role": "admin" },
+    { "name": "Rahul Sen", "email": "rahul@example.com", "password": "User@123", "role": "user" },
+    { "name": "Priya Das", "email": "priya@example.com", "password": "User@123", "role": "user" },
+    { "name": "Sam Carter", "email": "sam@example.com", "password": "User@123", "role": "user" }
+  ],
+  "comments": [
+    { "key": "c1", "author": "rahul@example.com", "daysAgo": 5, "text": "Great write-up. The section on caching finally made indexes click for me.", "likes": ["priya@example.com", "sam@example.com", "admin@example.com"] },
+    { "key": "c2", "author": "priya@example.com", "daysAgo": 5, "parent": "c1", "text": "Agreed. Would love a follow-up on compound indexes.", "likes": ["rahul@example.com"] },
+    { "key": "c3", "author": "admin@example.com", "daysAgo": 4, "parent": "c1", "text": "Thanks both. A compound index post is planned for next week.", "likes": ["rahul@example.com", "priya@example.com"] },
+    { "key": "c4", "author": "sam@example.com", "daysAgo": 3, "text": "Does this approach still work with MongoDB Atlas free tier?", "likes": [] },
+    { "key": "c5", "author": "rahul@example.com", "daysAgo": 3, "parent": "c4", "text": "Yes, I use it on the free tier. Just whitelist your IP first.", "likes": ["sam@example.com"] },
+    { "key": "c6", "author": "sam@example.com", "daysAgo": 2, "text": "BUY CHEAP FOLLOWERS NOW at spam-site.example, limited offer!!!", "likes": [], "reports": ["rahul@example.com", "priya@example.com", "admin@example.com"] },
+    { "key": "c7", "author": "priya@example.com", "daysAgo": 2, "text": "This tutorial is garbage and so is anyone who likes it.", "likes": [], "reports": ["rahul@example.com"] },
+    { "key": "c8", "author": "sam@example.com", "daysAgo": 1, "text": "Leaked private phone numbers of other users: 000-000-0000", "likes": [], "status": "hidden", "reports": ["priya@example.com", "rahul@example.com"] },
+    { "key": "c9", "author": "priya@example.com", "daysAgo": 0, "text": "Quick question: how do you handle pagination for very long threads?", "likes": ["admin@example.com"] }
+  ]
+}
